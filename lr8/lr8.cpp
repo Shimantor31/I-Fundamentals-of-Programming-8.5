@@ -32,4 +32,18 @@ int main()
     outputPalindrome((int)b);
 
     system("pause");
+
+    // ADDED
+
+    cout << "\033[2J\033[1;1H";
+
+    // 3
+
+    cout << "Enter num: ";
+    cin >> x;
+    
+    cout << "The number of ways you can write num as the sum of consecutive positive integers: " << consecutiveNumbersSum(x) << endl;
+
+    system("pause");
+    // END OF ADDED
 }

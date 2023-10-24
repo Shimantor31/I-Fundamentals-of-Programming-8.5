@@ -36,3 +36,25 @@ void outputPalindrome(const int num) {
         cout << num << " isn't a palindrome" << endl;
     }
 }
+
+// ADDED
+
+int consecutiveNumbersSum(const int n) {
+    int answer = 1;
+    int sum;
+    for (int i = 1; i < n; ++i) {
+        sum = i;
+        for (int j = i + 1;; ++j) {
+            sum += j;
+            if (sum >= n) {
+                if (sum == n) {
+                    answer++;
+                }
+                break;
+            }
+        }
+    }
+    return answer;
+}
+
+// END OF ADDED
